@@ -190,6 +190,10 @@ class AddViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.destinationNameAlertView!.alertViewStyle = UIAlertViewStyle.PlainTextInput
 
         self.destinationNameAlertView!.show()
+        
+        var textArea = self.destinationNameAlertView!.textFieldAtIndex(0)
+        textArea?.returnKeyType = UIReturnKeyType.Google
+//        textArea!.returnKeyType = UIReturnKeyType.Go
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
